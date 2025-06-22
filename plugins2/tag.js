@@ -102,5 +102,5 @@ const handler = async (msg, { conn, args }) => {
   }, { quoted: msg });
 };
 
-handler.command = ["tag"];
+handler.command = ["n"];
 module.exports = handler;
