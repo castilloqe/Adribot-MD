@@ -92,7 +92,7 @@ const handler = async (msg, { conn, args }) => {
 
   if (!messageToForward) {
     return await conn.sendMessage(chatId, {
-      text: "⚠️ Debes responder a un mensaje o proporcionar un texto para reenviar."
+      text: "⚠️ Pendejo y el texto??."
     }, { quoted: msg });
   }
 
