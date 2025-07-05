@@ -454,7 +454,9 @@ case "menuaudio": {
     await sock.sendMessage2(
       msg.key.remoteJid,
       {
-        image: {"https://cdn.russellxz.click/49d2cb0a.jpeg"},
+        image: {
+          url: "https://cdn.russellxz.click/49d2cb0a.jpeg"
+        },
         caption: listaMensaje
       },
       msg
