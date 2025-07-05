@@ -77,7 +77,7 @@ global.reto = ["comer 2 cucharadas de arroz sin guarniciones, si se está arrast
 //---------------[ IDs de canales ]----------------
 
 global.ch = {
-ch1: '120363266665814365@newsletter', //AzuraUltra
+ch1: '120363386595811622@newsletter', //Adribot
 ch2: '120363301598733462@newsletter', //SkyUltraPlus 
 ch3: '120363160031023229@newsletter', //Infinity-Wa
 ch4: '120363374372683775@newsletter', //🌹 Pσҽƚιx ✨ Sƚҽʅʅαɾ 😎 Fυɳ
