@@ -7204,7 +7204,7 @@ case 'verper': {
 
 // 📷 **Enviar mensaje con imagen**  
 await sock.sendMessage(msg.key.remoteJid, {  
-    image: { url: https:"https://cdn.russellxz.click/c886aadd.jpeg" },  
+    image: { url:"https://cdn.russellxz.click/c886aadd.jpeg" },  
     caption: mensaje  
 }, { quoted: msg });
 
