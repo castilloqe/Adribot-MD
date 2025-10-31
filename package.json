@@ -13,7 +13,7 @@
   "author": "Russell",
   "license": "ISC",
   "dependencies": {
-    "@whiskeysockets/baileys": "github:ds6/bails",
+    "@whiskeysockets/baileys": "github:EdderBot02/bail",
     "awesome-phonenumber": "^5.10.0",
     "axios": "^0.24.0",
     "cfonts": "^2.10.0",
