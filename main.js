@@ -280,7 +280,7 @@ case 'play': {
     const thumbnail = video.thumbnail;
 
     const info = `
-╭─╼⃝🌟 𝓒𝓞𝓡𝓣𝓐𝓝𝓐 2.0 𝓑𝓞𝓣 🌟╾⃝─╮
+╭─╼⃝🌟 AdriBot🤴🏻 🌟╾⃝─╮
 
 🎼 𝓓𝓮𝓽𝓪𝓵𝓵𝓮𝓼 𝓭𝓮𝓵 𝓥𝓲𝓭𝓮𝓸:
 ╭───────────────╮
@@ -304,7 +304,7 @@ case 'play': {
 ➤ 𝟒 o *videodoc* – 𝓥𝓲𝓭𝓮𝓸 𝓭𝓸𝓬  
 ╰───────────✦
 
-🤖 𝓒𝓸𝓻𝓽𝓪𝓷𝓪 2.0 – 𝓣𝓾 𝓑𝓸𝓽 𝓘𝓷𝓽𝓮𝓵𝓲𝓰𝓮𝓷𝓽𝓮 🎧
+🤖 AdriBot 🤴🏻 – Tu Bot inteligente 🎧
 `;
 
     const sent = await sock.sendMessage(chatId, {
@@ -357,7 +357,7 @@ case 'play2': {
     const thumbnail = video.thumbnail;
 
     const info = `
-╭─╼⃝🌟 𝓒𝓞𝓡𝓣𝓐𝓝𝓐 2.0 𝓑𝓞𝓣 🌟╾⃝─╮
+╭─╼⃝🌟 AdriBot🤴🏻 🌟╾⃝─╮
 
 🎼 𝓓𝓮𝓽𝓪𝓵𝓵𝓮𝓼 𝓭𝓮𝓵 𝓥𝓲𝓭𝓮𝓸:
 ╭───────────────╮
@@ -381,7 +381,7 @@ case 'play2': {
 ➤ 𝟒 o *videodoc* – 𝓥𝓲𝓭𝓮𝓸 𝓭𝓸𝓬  
 ╰───────────✦
 
-🤖 𝓒𝓸𝓻𝓽𝓪𝓷𝓪 2.0 – 𝓣𝓾 𝓑𝓸𝓽 𝓘𝓷𝓽𝓮𝓵𝓲𝓰𝓮𝓷𝓽𝓮 🎧
+🤖 AdriBot 🤴🏻 – Tu Bot inteligente 🎧
 `;
 
     const sent = await sock.sendMessage(chatId, {
@@ -424,7 +424,7 @@ case "menuaudio": {
     const guarData = JSON.parse(fs.readFileSync("./guar.json", "utf-8"));
     let claves = Object.keys(guarData);
 
-    let listaMensaje = `🎧 𓆩 𝐌𝐄𝐍𝐔́ 𝐌𝐔𝐋𝐓𝐈𝐌𝐄𝐃𝐈𝐀 — 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 𓆪
+    let listaMensaje = `🎧 𓆩 𝐌𝐄𝐍𝐔́ 𝐌𝐔𝐋𝐓𝐈𝐌𝐄𝐃𝐈𝐀 — AdriBot🤴🏻 𓆪
 
 🔑 *Palabras clave almacenadas:*  
 ✦ Usa el comando: *${global.prefix}g palabra_clave*  
@@ -448,8 +448,8 @@ case "menuaudio": {
 📤 ${global.prefix}g — Recuperar archivo  
 🗑️ ${global.prefix}kill — Eliminar archivo
 
-🚀 *Cortana 2.0 Bot está en constante expansión.*
-👨‍💻 *Desarrollado por Russell XZ*`;
+🚀 *AdriBot 🤴🏻 está en constante expansión.*
+👨‍💻 *Desarrollado por Adri🤴🏻-Pitudo*`;
 
     await sock.sendMessage2(
       msg.key.remoteJid,
@@ -978,7 +978,7 @@ case 'whatmusic': {
         const channel = video.author.name || 'Desconocido';
 
         const banner = `
-╭〔 💿 𝗖𝗢𝗥𝗧𝗔𝗡𝗔 2.0 𝗕𝗢𝗧 〕╮
+╭〔 💿 AdriBot🤴🏻 〕╮
 
 🎧 𝙈𝙪𝙨𝙞𝙘 𝘿𝙚𝙩𝙚𝙘𝙩𝙚𝙙 🎶
 
@@ -994,8 +994,8 @@ case 'whatmusic': {
 ┃ 🔗 𝓔𝓷𝓵𝓪𝓬𝓮: ${videoUrl}
 ╰──────⋆⋅☆⋅⋆──────╯
 
-📥 𝓔𝓼𝓹𝓮𝓻𝓪 𝓾𝓷 𝓶𝓸𝓶𝓮𝓷𝓽𝓸...
-⏳ 𝓔𝓼𝓽𝓪𝓶𝓸𝓼 𝓭𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓷𝓭𝓸 𝓽𝓾 𝓬𝓪𝓷𝓬𝓲𝓸́𝓷 🎶
+📥 espera un momento...
+⏳ estamos descargando la canción 🎶
 ╰━━━━━━━━━━━━━━━╯
 `;
 
@@ -1121,7 +1121,7 @@ case 'whatmusic6': {
         if (!video) throw new Error("No se encontró la canción en YouTube");
 
         const banner = `
-╭〔 💿 𝗖𝗢𝗥𝗧𝗔𝗡𝗔 2.0 𝗕𝗢𝗧 〕╮
+╭〔 💿 AdriBot🤴🏻 〕╮
 
 🎧 𝙈𝙪𝙨𝙞𝙘 𝘿𝙚𝙩𝙚𝙘𝙩𝙚𝙙 🎶
 
@@ -1137,8 +1137,8 @@ case 'whatmusic6': {
 ┃ 🔗 𝓔𝓷𝓵𝓪𝓬𝓮: ${videoUrl}
 ╰──────⋆⋅☆⋅⋆──────╯
 
-📥 𝓔𝓼𝓹𝓮𝓻𝓪 𝓾𝓷 𝓶𝓸𝓶𝓮𝓷𝓽𝓸...
-⏳ 𝓔𝓼𝓽𝓪𝓶𝓸𝓼 𝓭𝓮𝓼𝓬𝓪𝓻𝓰𝓪𝓷𝓭𝓸 𝓽𝓾 𝓬𝓪𝓷𝓬𝓲𝓸́𝓷 🎶
+📥 espera un momento...
+⏳ estamos descargando la canción 🎶
 ╰━━━━━━━━━━━━━━━╯
 `;
 
@@ -1254,7 +1254,7 @@ case 'ff2': {
             mimetype: 'audio/mpeg',
             fileName: `audio_reparado.mp3`,
             ptt: audioMsg?.ptt || false,
-            caption: `✅ *Audio reparado exitosamente*\n⏱️ *Tiempo de reparación:* ${endTime}s\n\n© Azura Ultra 2.0`
+            caption: `✅ *Audio reparado exitosamente*\n⏱️ *Tiempo de reparación:* ${endTime}s\n\n© AdriBot🤴🏻`
         }, { quoted: msg });
 
         fs.unlinkSync(inputPath);
@@ -1489,7 +1489,7 @@ case 'linia': {
             video: fs.readFileSync(finalPath),
             mimetype: 'video/mp4',
             fileName: `video_optimo.mp4`,
-            caption: `✅ *Video optimizado para WhatsApp*\n⏱️ *Conversión:* ${endTime}s\n\n© Azura Ultra 2.0`
+            caption: `✅ *Video optimizado para WhatsApp*\n⏱️ *Conversión:* ${endTime}s\n\n© AdriBot🤴🏻`
         }, { quoted: msg });
 
         fs.unlinkSync(rawPath);
@@ -1640,7 +1640,7 @@ case 'ytmp4': {
         }
 
         const caption = `
-╔✪〘 𝗖𝗢𝗥𝗧𝗔𝗡𝗔 2.0 𝗕𝗢𝗧 〙✪╗
+╔✪〘 AdriBot🤴🏻 〙✪╗
 
 🎶 𝑰𝒏𝒇𝒐 𝒅𝒆𝒍 𝑽𝒊́𝒅𝒆𝒐:
 
@@ -1657,7 +1657,7 @@ case 'ytmp4': {
 
 ⚠️ 𝙎𝙞 𝙣𝙤 𝙨𝙚 𝙧𝙚𝙥𝙧𝙤𝙙𝙪𝙘𝙚, 𝙪𝙨𝙖 _${global.prefix}ff_
 
-🔧 𝑷𝒓𝒐𝒄𝒆𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 𝑪𝑶𝑹𝑻𝑨𝑵𝑨 𝟐.𝟎 𝑩𝑶𝑻
+🔧 𝑷𝒓𝒐𝒄𝒆𝒔𝒂𝒅𝒐 𝒑𝒐𝒓 AdriBot🤴🏻
 `;
 
         await sock.sendMessage(msg.key.remoteJid, {
@@ -1846,7 +1846,7 @@ case 'ytmp3': {
 ⚙️ *Aguarda un momento mientras finalizamos la descarga.*
 
 ╭─────⟡
-│ 🤖 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 𝐁𝐎𝐓
+│ 🤖 AdriBot🤴🏻 🤖
 ╰─────⟡`
     }, { quoted: msg });
 
@@ -1931,7 +1931,7 @@ case 'play3': {
 ⧁ 𝙋𝙊𝙋𝙐𝙇𝘼𝙍𝙄𝘿𝘼𝘿: ${result.popularity}
 ⧁ 𝙀𝙉𝙇𝘼𝘾𝙀: ${url}
 
-🎶 *Azura Ultra  esta enviando tu música...*`.trim();
+🎶 *AdriBot🤴🏻  esta enviando tu música...*`.trim();
 
         await sock.sendMessage(msg.key.remoteJid, {
             image: { url: img },
@@ -2065,7 +2065,7 @@ case 'play5': {
 
         const infoMessage = `
 ╔══════════════════╗
-║  ✦ 𝘼𝙕𝙐𝙍𝘼 𝙐𝙇𝙏𝙍𝘼 BOT 2.0 ✦   
+║  ✦ AdriBot🤴🏻 ✦   
 ╚══════════════════╝
 
 📀 *𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙫𝙞𝙙𝙚𝙤:*  
@@ -2084,10 +2084,10 @@ case 'play5': {
 ┗ 🎥 *Video:* _${global.prefix}play4 ${text}_
 
 ⏳ *Espera un momento...*  
-⚙️ *Azura Ultra 2.0 está procesando tu música...*
+⚙️ *AdriBot🤴🏻 está procesando tu música...*
 
 ═════════════════════  
-     𖥔 𝗔𝘇𝘂𝗋𝗮 𝗨𝗹𝘁𝗋𝗮 2.0 BOT 𖥔
+     𖥔 AdriBot🤴🏻 𖥔
 ═════════════════════`;
 
         await sock.sendMessage(msg.key.remoteJid, {
@@ -2244,7 +2244,7 @@ case 'play6': {
 
         const infoMessage = `
 ╔══════════════════╗
-║✦ 𝘼𝙕𝙐𝙍𝘼 𝙐𝙇𝙏𝙍𝘼 2.0 BOT  ✦   
+║✦ AdriBot🤴🏻  ✦   
 ╚══════════════════╝
 
 📀 *𝙄𝙣𝙛𝙤 𝙙𝙚𝙡 𝙫𝙞𝙙𝙚𝙤:*  
@@ -2263,10 +2263,10 @@ case 'play6': {
 ┗ 🎥 *Video:* _${global.prefix}play6 ${text}_
 
 ⏳ *Espera un momento...*  
-⚙️ *Azura Ultra 2.0 está procesando tu video...*
+⚙️ *AdriBot🤴🏻 está procesando tu video...*
 
 ═════════════════════  
-     𖥔 𝗔𝘇𝘂𝗋𝗮 𝗨𝗹𝘁𝗋𝗮 2.0 BOT𖥔
+     𖥔 AdriBot🤴🏻 𖥔
 ═════════════════════`;
 
         await sock.sendMessage(msg.key.remoteJid, {
@@ -2318,7 +2318,7 @@ case 'play6': {
 
 Disfrútelo y continúe explorando el mundo digital.
 
-© Azura Ultra 2.0 Bot`;
+© AdriBot🤴🏻`;
 
         await sock.sendMessage(msg.key.remoteJid, {
             video: fs.readFileSync(finalPath),
@@ -2532,7 +2532,7 @@ case 'robar': {
     // Verificar que el ladrón esté registrado
     if (!rpgData.usuarios[userId]) {
       return sock.sendMessage(msg.key.remoteJid, {
-        text: `❌ *No tienes una cuenta registrada en el gremio Azura Ultra.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
+        text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
       }, { quoted: msg });
     }
 
@@ -2855,7 +2855,7 @@ case 'gremio': {
 
         if (!rpgData.usuarios || Object.keys(rpgData.usuarios).length === 0) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: "📜 *No hay miembros registrados en el Gremio Azura Ultra.*\nUsa `" + global.prefix + "rpg <nombre> <edad>` para unirte." 
+                text: "📜 *No hay miembros registrados en el Gremio AdriBot🤴🏻.*\nUsa `" + global.prefix + "rpg <nombre> <edad>` para unirte." 
             }, { quoted: msg });
             return;
         }
@@ -2866,7 +2866,7 @@ case 'gremio': {
         // Encabezado del mensaje con el total al principio
         let listaMiembros = 
 `╔══════════════════╗  
-║ 🏰 *Gremio Cortana 2.0* 🏰 ║  
+║ 🏰 *AdriBot🤴🏻* 🏰 ║  
 ╚══════════════════╝  
 
 📋 *Total de miembros registrados:* ${miembros.length}\n`;
@@ -3551,7 +3551,7 @@ case 'allmenu': {
     let totalComandos = commands.length;
 
     // Menú visual estilizado
-    let commandList = `📚 𓆩 𝐌𝐄𝐍𝐔́ 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐎 - 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 𝐁𝐎𝐓 𓆪
+    let commandList = `📚 𓆩 𝐌𝐄𝐍𝐔́ 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐎 - AdriBot🤴🏻 𓆪
 
 🔹 *Total de comandos:* ${totalComandos}
 🔹 *Prefijo actual:* 『${global.prefix}』
@@ -3566,13 +3566,13 @@ case 'allmenu': {
     commandList += `
 
 ━━━━━━━━━━━━━━━━━━━
-👨‍💻 *Desarrollado por:* Russell XZ
-🤖 *Cortana 2.0 — Asistente Avanzado*`;
+👨‍💻 *Desarrollado por:* Adri-pitudo🤴🏻
+🤖 *AdriBot🤴🏻 — Asistente Avanzado*`;
 
     await sock.sendMessage2(
       chatId,
       {
-        image: { url: "https://cdn.russellxz.click/3d1075fc.jpeg" },
+        image: { url: "https://cdn.russellxz.click/218e9259.jpeg" },
         caption: commandList
       },
       msg
@@ -3595,7 +3595,7 @@ case 'menuowner': {
     });
 
     const chatId = msg.key.remoteJid;
-    const captionText = `👑 CORTANA 2.0 — PANEL DEL CREADOR
+    const captionText = `👑 AdriBot🤴🏻 — PANEL DEL CREADOR
 
 🧠 Comandos exclusivos del propietario:
 
@@ -3633,12 +3633,12 @@ case 'menuowner': {
 • ${global.prefix}deletelista
 
 🔐 Solo para administradores autorizados.
-👨‍💻 Dev: Russell XZ`;
+👨‍💻 Dev: Adri-pitudo🤴🏻`;
 
     await sock.sendMessage2(
       chatId,
       {
-        image: { url: "https://cdn.russellxz.click/799e0033.jpeg" },
+        image: { url: "https://cdn.russellxz.click/b69818e5.jpeg" },
         caption: captionText
       },
       msg
@@ -3662,7 +3662,7 @@ case 'menurpg': {
     });
 
     const chatId = msg.key.remoteJid;
-    const menuText = `🎮 𓆩 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 𝐁𝐎𝐓 — 𝐌𝐄𝐍𝐔́ 𝐑𝐏𝐆 𓆪
+    const menuText = `🎮 𓆩 AdriBot🤴🏻 — 𝐌𝐄𝐍𝐔́ 𝐑𝐏𝐆 𓆪
 
 🌟 *Explora un mundo de aventuras*  
 📍 *Regístrate:* ${global.prefix}rpg <nombre> <edad>  
@@ -3708,13 +3708,13 @@ case 'menurpg': {
 🐶 ${global.prefix}topmascotas  
 🏅 ${global.prefix}topper
 
-🧙 *Desarrollado por:* Russell XZ  
-🧭 *Sistema de aventura activo en Cortana 2.0 Bot*`;
+🧙 *Desarrollado por:* Adri-pitudo🤴🏻 
+🧭 *Sistema de aventura activo en AdriBot🤴🏻*`;
 
     await sock.sendMessage2(
       chatId,
       {
-        image: { url: "https://cdn.russellxz.click/a4f19ed5.jpeg" },
+        image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },
         caption: menuText
       },
       msg
@@ -3739,8 +3739,8 @@ case 'menu': {
 
     const chatId = msg.key.remoteJid;
     const captionText = `╔═════════════════╗
-║   🤖 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 𝐁𝐎𝐓 🤖
-║     𝘈𝘴𝘪𝘴𝘵𝘦𝘯𝘵𝘦 𝘝𝘪𝘳𝘵𝘶𝘢𝘭     
+║   🤖 AdriBot🤴🏻 🤖
+║   Tu  𝘈𝘴𝘪𝘴𝘵𝘦𝘯𝘵𝘦 𝘝𝘪𝘳𝘵𝘶𝘢𝘭     
 ╚════════════════╝
 
 ╭── 📋 MENÚ PRINCIPAL ──╮
@@ -3823,12 +3823,12 @@ case 'menu': {
 ¡Nuevas funciones serán añadidas pronto!  
 ╰────────────────╯
 
-👨‍💻 Desarrollado por *Russell XZ*`;
+👨‍💻 Desarrollado por *Adri-pitudo🤴🏻*`;
 
     await sock.sendMessage2(
       chatId,
       {
-        image: { url: "https://cdn.russellxz.click/a4d709b4.jpeg" },
+        image: { url: "https://cdn.russellxz.click/0676a8d9.jpeg" },
         caption: captionText
       },
       msg
@@ -3852,7 +3852,7 @@ case 'menugrupo': {
     });
 
     const chatId = msg.key.remoteJid;
-    const captionText = `╭─❍ 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 𝐁𝐎𝐓 ❍─╮
+    const captionText = `╭─❍ AdriBot🤴🏻 ❍─╮
 │ 🎭 𝙈𝙀𝙉𝙐́ 𝘿𝙀 𝙂𝙍𝙐𝙋𝙊 🎭
 ╰───────────────╯
 
@@ -3904,14 +3904,14 @@ case 'menugrupo': {
 
 📌 𝐌Á𝐒 𝐂𝐎𝐌𝐀𝐍𝐃𝐎𝐒 𝐏𝐑Ó𝐗𝐈𝐌𝐀𝐌𝐄𝐍𝐓𝐄...
 
-╭─❍ 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎 ❍─╮  
+╭─❍ AdriBot🤴🏻 ❍─╮  
 │ 𝙐𝙣 𝙗𝙤𝙩 𝙖𝙙𝙖𝙥𝙩𝙖𝙙𝙤 𝙥𝙖𝙧𝙖 𝙩𝙪 𝙜𝙧𝙪𝙥𝙤.
 ╰──────────────────╯`;
 
     await sock.sendMessage2(
       chatId,
       {
-        image: { url: "https://cdn.russellxz.click/a69577e7.jpeg" },
+        image: { url: "https://cdn.russellxz.click/0676a8d9.jpeg" },
         caption: captionText
       },
       msg
@@ -4106,7 +4106,7 @@ case 'add': {
     if (!args[0]) {
       await sock.sendMessage(
         chatId,
-        { text: "⚠️ *Debes proporcionar un número para agregar.*\nEjemplo: `.add +50766066666`" },
+        { text: "⚠️ *Debes proporcionar un número para agregar.*\nEjemplo: `.add +5066066666`" },
         { quoted: msg }
       );
       return;
@@ -4709,7 +4709,7 @@ case 'todos': {
     const extraMsg = args.join(" ");
 
     let finalMsg = `╔『 🔊 INVOCACIÓN MASIVA 』╗\n`;
-    finalMsg += `╟🔹 *CORTANA 2.0 BOT PRESENTE*\n`;
+    finalMsg += `╟🔹 *AdriBot🤴🏻 PRESENTE*\n`;
     finalMsg += `╟👤 *Invocado por:* @${sender}\n`;
     if (extraMsg.trim().length > 0) {
       finalMsg += `╟💬 *Mensaje:* ${extraMsg}\n`;
@@ -4721,7 +4721,7 @@ case 'todos': {
     const mentionIds = participants.map(p => p.id);
 
     await sock.sendMessage(chatId, {
-      image: { url: "https://cdn.russellxz.click/9b10fab1.jpeg" },
+      image: { url: "https://cdn.russellxz.click/0676a8d9.jpeg" },
       caption: finalMsg,
       mentions: mentionIds
     }, { quoted: msg });
@@ -4957,7 +4957,7 @@ case 'cofre': {
         let rpgData = JSON.parse(fs.readFileSync(rpgFile, "utf-8"));
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
         let usuario = rpgData.usuarios[userId];
@@ -5079,7 +5079,7 @@ case 'claim': {
         let rpgData = JSON.parse(fs.readFileSync(rpgFile, "utf-8"));
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
         let usuario = rpgData.usuarios[userId];
@@ -5198,7 +5198,7 @@ case 'work': {
     if (!rpgData.usuarios[userId]) {
       return sock.sendMessage(
         msg.key.remoteJid,
-        { text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` },
+        { text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` },
         { quoted: msg }
       );
     }
@@ -5319,7 +5319,7 @@ case 'crime': {
         // Verificar que el usuario esté registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
         let usuario = rpgData.usuarios[userId];
@@ -5443,7 +5443,7 @@ case 'picar': {
     let rpgData = JSON.parse(fs.readFileSync(rpgFile, "utf-8"));
     if (!rpgData.usuarios[userId]) {
       return sock.sendMessage(msg.key.remoteJid, { 
-        text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+        text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
       }, { quoted: msg });
     }
     let usuario = rpgData.usuarios[userId];
@@ -5553,7 +5553,7 @@ case 'minar': {
     let rpgData = JSON.parse(fs.readFileSync(rpgFile, "utf-8"));
     if (!rpgData.usuarios[userId]) {
       return sock.sendMessage(msg.key.remoteJid, { 
-        text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+        text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
       }, { quoted: msg });
     }
     let usuario = rpgData.usuarios[userId];
@@ -5665,7 +5665,7 @@ case 'minar2': {
         // Verificar que el usuario esté registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
         let usuario = rpgData.usuarios[userId];
@@ -5820,7 +5820,7 @@ case 'topmascotas': {
     
     // Enviar la imagen con el ranking en el caption y mencionar a todos los usuarios incluidos
     await sock.sendMessage(msg.key.remoteJid, { 
-      image: { url: "https://cdn.russellxz.click/a1f18f8d.jpeg" },
+      image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },
       caption: mensajeFinal,
       mentions: ranking.map(u => u.id)
     }, { quoted: msg });
@@ -5896,7 +5896,7 @@ case 'topper': {
     
     // Enviar el mensaje con la imagen de fondo y mencionar a todos los usuarios incluidos en el ranking
     await sock.sendMessage(msg.key.remoteJid, { 
-      image: { url: "https://cdn.russellxz.click/83afae06.jpeg" },
+      image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },
       caption: mensajeRanking,
       mentions: ranking.map(u => u.id)
     }, { quoted: msg });
@@ -7150,7 +7150,7 @@ case 'verper': {
         // ❌ Verificar si el usuario está registrado 
         if (!rpgData.usuarios[userId]) { 
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No estás registrado en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No estás registrado en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
             return; 
         }
@@ -7166,7 +7166,7 @@ case 'verper': {
         }
 
         // 📜 **Lista de personajes del usuario**  
-        let mensaje = `🎭 *Tus Personajes Comprados - Cortana 2.0* 🎭\n\n`;
+        let mensaje = `🎭 *Tus Personajes Comprados - AdriBot🤴🏻* 🎭\n\n`;
 
         usuario.personajes.forEach((personaje, index) => { 
             mensaje += `═════════════════════\n`;  
@@ -7204,7 +7204,7 @@ case 'verper': {
 
 // 📷 **Enviar mensaje con imagen**  
 await sock.sendMessage(msg.key.remoteJid, {  
-    image: { url: "https://cdn.russellxz.click/e7b58ad6.jpeg" },  
+    image: { url: https:"https://cdn.russellxz.click/c886aadd.jpeg" },  
     caption: mensaje  
 }, { quoted: msg });
 
@@ -7242,7 +7242,7 @@ case 'per': {
             await sock.sendMessage(
                 msg.key.remoteJid,
                 {
-                    text: `❌ *No tienes una cuenta en el gremio Cortana 2.0.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
+                    text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
                 },
                 { quoted: msg }
             );
@@ -7380,7 +7380,7 @@ case 'nivelper': {
 
         if (!rpgData.usuarios[msg.key.participant]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes cuenta en Azura Ultra.*\n📌 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes cuenta en AdriBot🤴🏻.*\n📌 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
             return;
         }
@@ -7453,7 +7453,7 @@ case 'enemigos': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -7600,7 +7600,7 @@ case 'mododiablo': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -7747,7 +7747,7 @@ case 'podermaximo': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -7892,7 +7892,7 @@ case 'mododios': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8040,7 +8040,7 @@ case 'otrouniverso': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8185,7 +8185,7 @@ case 'otromundo': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8330,7 +8330,7 @@ case 'volar': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8475,7 +8475,7 @@ case 'poder': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8620,7 +8620,7 @@ case 'luchar': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8760,7 +8760,7 @@ case 'bolasdeldragon': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8882,7 +8882,7 @@ case 'curar': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -8951,7 +8951,7 @@ case 'supermascota': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9088,7 +9088,7 @@ case 'presumir': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9225,7 +9225,7 @@ case 'entrenar': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9362,7 +9362,7 @@ case 'pasear': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9500,7 +9500,7 @@ case 'cazar': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9637,7 +9637,7 @@ case 'darcariño': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9774,7 +9774,7 @@ case 'darcomida': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -9914,7 +9914,7 @@ case 'nivelmascota': {
         let userId = msg.key.participant || msg.key.remoteJid;
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta en el gremio Cortana 2.0..*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -10153,7 +10153,7 @@ case 'hosp': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -10224,7 +10224,7 @@ case 'ret': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0..*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -10295,7 +10295,7 @@ case 'dep': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0..*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -10367,7 +10367,7 @@ case 'nivel': {
         // ❌ Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             return sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta registrada en el gremio Cortana 2.0.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta registrada en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
         }
 
@@ -10518,7 +10518,7 @@ case 'visión': {
                 caption: `🖼️ *Imagen generada para:* ${userMention}\n` +
                          `📌 *Descripción:* ${query}\n\n` +
                          `🍧 API utilizada: https://api.dorratz.com\n` +
-                         `© Cortana 2.0 Bot`,
+                         `© AdriBot🤴🏻 ©`,
                 mentions: [participant] // Menciona al usuario (o al bot mismo si fuera el caso)
             },
             { quoted: msg }
@@ -10597,7 +10597,7 @@ case 'pixai': {
                 msg.key.remoteJid,
                 {
                     image: { url: imageUrl },
-                    caption: `🎨 *Imagen generada para:* ${userMention}\n📌 *Descripción:* ${prompt}\n\n🍧 API utilizada: https://api.dorratz.com\n© Cortana 2.0 Bot`,
+                    caption: `🎨 *Imagen generada para:* ${userMention}\n📌 *Descripción:* ${prompt}\n\n🍧 API utilizada: https://api.dorratz.com\n© AdriBot🤴🏻 ©`,
                     mentions: [participant] // Menciona al usuario (o bot si es el emisor)
                 },
                 { quoted: msg }
@@ -10636,8 +10636,8 @@ case 'verdad': {
         const verdad = pickRandom(global.verdad); // Selecciona una verdad aleatoria
 
         await sock.sendMessage(msg.key.remoteJid, {
-            image: { url: 'https://cdn.russellxz.click/cb9701a5.jpeg' },
-            caption: `𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘝𝘌𝘙𝘋𝘈𝘋*\n\n╱╲❀╱╲╱╲❀╱╲╱╲❀╱╲\n◆ ${verdad}\n╲╱❀╲╱╲╱❀╲╱╲╱❀╲╱\n\n© cortana 2.0 Bot`
+            image: { url: 'https://cdn.russellxz.click/c886aadd.jpeg' },
+            caption: `𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘝𝘌𝘙𝘋𝘈𝘋*\n\n╱╲❀╱╲╱╲❀╱╲╱╲❀╱╲\n◆ ${verdad}\n╲╱❀╲╱╲╱❀╲╱╲╱❀╲╱\n\n© AdriBot🤴🏻`
         }, { quoted: msg });
 
         // ✅ Reacción de éxito
@@ -10668,8 +10668,8 @@ case 'reto': {
         });
 
         await sock.sendMessage(msg.key.remoteJid, {
-            image: { url: 'https://cdn.russellxz.click/1e58dd69.jpeg' },
-            caption: `𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘙𝘌𝘛𝘖*\n\n╱╲❀╱╲╱╲❀╱╲╱╲❀╱╲\n◆ ${reto}\n╲╱❀╲╱╲╱❀╲╱╲╱❀╲╱\n\n© cortana 2.0 Bot`
+            image: { url: 'https://cdn.russellxz.click/c886aadd.jpeg' },
+            caption: `𝘏𝘢𝘴 𝘦𝘴𝘤𝘰𝘨𝘪𝘥𝘰 *𝘙𝘌𝘛𝘖*\n\n╱╲❀╱╲╱╲❀╱╲╱╲❀╱╲\n◆ ${reto}\n╲╱❀╲╱╲╱❀╲╱╲╱❀╲╱\n\n© AdriBot🤴🏻`
         }, { quoted: msg });
 
     } catch (e) {
@@ -10751,7 +10751,7 @@ case 'memes': {
 
         await sock.sendMessage(msg.key.remoteJid, {
             image: { url: meme },
-            caption: "🤣 *¡Aquí tienes un meme!*\n\n© Cortana 2.0 Bot"
+            caption: "🤣 *¡Aquí tienes un meme!*\n\n© AdriBot🤴🏻"
         }, { quoted: msg });
 
     } catch (e) {
@@ -10810,7 +10810,7 @@ case 'hd': {
         // 📤 Enviar imagen con la marca de agua en el texto
         await sock.sendMessage(msg.key.remoteJid, {
             image: pr,
-            caption: "✨ *Imagen mejorada con éxito.*\n\n© Cortana 2.0 Bot"
+            caption: "✨ *Imagen mejorada con éxito.*\n\n© AdriBot🤴🏻"
         }, { quoted: msg });
 
         // ✅ Reacción de éxito
@@ -11000,7 +11000,7 @@ case 'ia': {
         const respuestaGPT4 = data.data.message;
 
         await sock.sendMessage(msg.key.remoteJid, { 
-            text: `✨ *GPT-4 responde a @${userId.replace("@s.whatsapp.net", "")}:*\n\n${respuestaGPT4}\n\n🔹 *Powered by Cortana* 🤖`,
+            text: `✨ *GPT-4 responde a @${userId.replace("@s.whatsapp.net", "")}:*\n\n${respuestaGPT4}\n\n🔹 *Powered by Adri-pitudo* 🤖`,
             mentions: [userId] 
         }, { quoted: msg });
 
@@ -11110,7 +11110,7 @@ case 'gemini': {
         let respuestaGemini = json.message.trim();
 
         await sock.sendMessage(msg.key.remoteJid, { 
-            text: `✨ *Respuesta de Gemini para @${userId.replace("@s.whatsapp.net", "")}:*\n\n${respuestaGemini}\n\n🔹 *Powered by Cortana 2.0 Bot* 🤖`,
+            text: `✨ *Respuesta de Gemini para @${userId.replace("@s.whatsapp.net", "")}:*\n\n${respuestaGemini}\n\n🔹 *Powered by Adri-pitudo* 🤖`,
             mentions: [userId] // Menciona al usuario en la respuesta
         }, { quoted: msg });
 
@@ -11167,7 +11167,7 @@ case 'simisimi': {
         const respuestaSimi = data.result;
 
         await sock.sendMessage(msg.key.remoteJid, { 
-            text: `✨ *Simi Simi responde a @${userId.replace("@s.whatsapp.net", "")}:*\n\n${respuestaSimi}\n\n🔹 *Powered by Cortana 2.0 Bot* 🤖`,
+            text: `✨ *Simi Simi responde a @${userId.replace("@s.whatsapp.net", "")}:*\n\n${respuestaSimi}\n\n🔹 *Powered by Adri-pitudo* 🤖`,
             mentions: [userId] // Menciona al usuario en la respuesta
         }, { quoted: msg });
 
@@ -11209,7 +11209,7 @@ case 'topuser': {
 
         if (!rpgData.usuarios || Object.keys(rpgData.usuarios).length === 0) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: "📜 *No hay miembros registrados en el Gremio Cortana 2.0.*" 
+                text: "📜 *No hay miembros registrados en el Gremio AdriBot🤴🏻.*" 
             }, { quoted: msg });
             return;
         }
@@ -11219,7 +11219,7 @@ case 'topuser': {
         // Ordenar por nivel de mayor a menor
         usuarios.sort((a, b) => b[1].nivel - a[1].nivel);
 
-        let ranking = `🏆 *rαทкiทg ∂є jυgα∂σrєs ∂єℓ grємiσ cσrταทα 2.0* 🏆\n\n`;
+        let ranking = `🏆 *rαทкiทg ∂є jυgα∂σrєs ∂єℓ grємiσ AdriBot🤴🏻* 🏆\n\n`;
         let mentions = [];
 
         usuarios.forEach(([userId, usuario], index) => {
@@ -11240,7 +11240,7 @@ case 'topuser': {
 
         // Enviar el mensaje con imagen 📩
         await sock.sendMessage(msg.key.remoteJid, { 
-            image: { url: "https://cdn.russellxz.click/f55eb012.jpeg" },
+            image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },
             caption: ranking,
             mentions: mentions // Mencionar a todos los jugadores
         }, { quoted: msg });
@@ -11607,7 +11607,7 @@ case 'alaventa': {
             return;
         }
 
-        let mensaje = `🏪 *Mercado de Personajes - Cortana 2.0* 🏪\n\n`;
+        let mensaje = `🏪 *Mercado de Personajes - AdriBot🤴🏻* 🏪\n\n`;
         mensaje += `🎭 *Aquí puedes comprar personajes puestos a la venta por otros jugadores.*\n`;
         mensaje += `🛒 *Para comprar usa:* \n`;
         mensaje += `   📌 \`${global.prefix}comprar2 <nombre_personaje>\`\n\n`;
@@ -11633,7 +11633,7 @@ case 'alaventa': {
 
 // 📷 Enviar el mensaje con imagen  
 await sock.sendMessage(msg.key.remoteJid, { 
-    image: { url: "https://cdn.russellxz.click/cda2a3e1.jpeg" }, 
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" }, 
     caption: mensaje, 
     mentions: rpgData.mercadoPersonajes.map(p => p.vendedor) // Menciona a los vendedores
 }, { quoted: msg });
@@ -11781,7 +11781,7 @@ case 'compra': {
         // Verificar si el archivo existe
         if (!fs.existsSync(rpgFile)) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta en el gremio Azura Ultra.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
             }, { quoted: msg });
             return;
         }
@@ -11793,7 +11793,7 @@ case 'compra': {
         let userId = msg.key.participant || msg.key.remoteJid;
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta en el gremio Azura Ultra.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
             }, { quoted: msg });
             return;
         }
@@ -11946,7 +11946,7 @@ case 'rpg': {
 
         if (rpgData.usuarios[userId]) { 
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `⚠️ *Ya estás registrado en el gremio Azura Ultra.*\n\n📜 Usa \`${global.prefix}menurpg\` para ver tus opciones.` 
+                text: `⚠️ *Ya estás registrado en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}menurpg\` para ver tus opciones.` 
             }, { quoted: msg });
             return; 
         }
@@ -12043,12 +12043,12 @@ case 'rpg': {
    *${global.prefix}minar*, *${global.prefix}picar*, *${global.prefix}crime*, *${global.prefix}work*,  
    *${global.prefix}claim*, *${global.prefix}cofre*, *${global.prefix}minar2*, *${global.prefix}robar*  
 
-🚀 ¡Prepárate para la aventura en *Cortana 2.0*! 🏆`;
+🚀 ¡Prepárate para la aventura en *AdriBot🤴🏻*! 🏆`;
 
 await sock.sendMessage(msg.key.remoteJid, { edit: registroMensaje.key, text: "✅ *¡Registro completado!* Generando tu tarjeta de jugador..." }); 
 await new Promise(resolve => setTimeout(resolve, 2000)); 
 await sock.sendMessage(msg.key.remoteJid, {  
-    image: { url: "https://cdn.russellxz.click/6a89b1ba.jpeg" },  
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },  
     caption: mensajeFinal  
 }, { quoted: msg }); 
 
@@ -12078,7 +12078,7 @@ case 'vermascotas': {
         // 📂 Verificar si el archivo existe  
         if (!fs.existsSync(rpgFile)) {  
             await sock.sendMessage(msg.key.remoteJid, {  
-                text: `❌ *No tienes una cuenta en el gremio Azura Ultra.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`  
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`  
             }, { quoted: msg });  
             return;  
         }  
@@ -12090,7 +12090,7 @@ case 'vermascotas': {
         let userId = msg.key.participant || msg.key.remoteJid;  
         if (!rpgData.usuarios[userId]) {  
             await sock.sendMessage(msg.key.remoteJid, {  
-                text: `❌ *No tienes una cuenta en el gremio Azura Ultra.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`  
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`  
             }, { quoted: msg });  
             return;  
         }  
@@ -12106,7 +12106,7 @@ case 'vermascotas': {
         }  
 
         // 📜 Mensaje principal con explicación  
-        let mensaje = ` 🐾 *Tus Mascotas - Cortana 2.0* 🐾\n\n`;  
+        let mensaje = ` 🐾 *Tus Mascotas - AdriBot🤴🏻* 🐾\n\n`;  
         mensaje += `📜 *Aquí puedes ver todas las mascotas que has comprado y sus estadísticas.*\n\n`;  
         mensaje += `🔹 Usa \`${global.prefix}mascota <número>\` para cambiar tu mascota principal.\n`;  
         mensaje += `🔹 Usa \`${global.prefix}curar\` para restaurar la vida de tu mascota.\n`;  
@@ -12136,11 +12136,11 @@ case 'vermascotas': {
         // 📜 **Explicación Final**  
         mensaje += `📜 **Estos son los comandos para subir de nivel a tu mascota:**\n`;  
         mensaje += `   🛠️ *${global.prefix}daragua*, *${global.prefix}darcomida*, *${global.prefix}darcariño*, *${global.prefix}pasear*, *${global.prefix}cazar*, *${global.prefix}entrenar*, *${global.prefix}presumir*, *${global.prefix}supermascota*\n\n`;  
-        mensaje += `🚀 **¡Sigue entrenando a tus mascotas en el Gremio Azura Ultra!** 🏆`;  
+        mensaje += `🚀 **¡Sigue entrenando a tus mascotas en el Gremio AdriBot🤴🏻!** 🏆`;  
 
 // 🖼️ Enviar mensaje con imagen en lugar de GIF
 await sock.sendMessage(msg.key.remoteJid, {  
-    image: { url: "https://cdn.russellxz.click/6798e311.jpeg" },  
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },  
     caption: mensaje  
 }, { quoted: msg });
 
@@ -12186,7 +12186,7 @@ await sock.sendMessage(msg.key.remoteJid, {
         // Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No estás registrado en el gremio Azura Ultra.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
+                text: `❌ *No estás registrado en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
             }, { quoted: msg });
             return;
         }
@@ -12366,7 +12366,7 @@ case 'dar': {
         // 📌 Verificar si el usuario objetivo está registrado en el RPG
         if (!rpgData.usuarios[targetUser]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *El usuario no tiene una cuenta en el gremio Azura Ultra.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarlo.` 
+                text: `❌ *El usuario no tiene una cuenta en el gremio AdriBot🤴🏻.*\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarlo.` 
             }, { quoted: msg });
             return;
         }
@@ -12448,7 +12448,7 @@ case 'deleteuser': {
         // 📌 Verificar si el usuario está registrado en el RPG
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, {
-                text: `❌ *El usuario @${text} no tiene una cuenta registrada en el gremio Azura Ultra.*`,
+                text: `❌ *El usuario @${text} no tiene una cuenta registrada en el gremio AdriBot🤴🏻.*`,
                 mentions: [userId]
             }, { quoted: msg });
             return;
@@ -12468,7 +12468,7 @@ case 'deleteuser': {
 
         // 📩 Confirmar eliminación
         await sock.sendMessage(msg.key.remoteJid, {
-            text: `🗑️ *La cuenta de @${text} ha sido eliminada exitosamente del gremio Cortana 2.0.*\n\n` +
+            text: `🗑️ *La cuenta de @${text} ha sido eliminada exitosamente del gremio AdriBot🤴🏻.*\n\n` +
                   `🔹 *Sus personajes han sido devueltos a la tienda.*`,
             mentions: [userId]
         }, { quoted: msg });
@@ -12516,14 +12516,14 @@ case 'deleterpg': {
         // Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes un registro en el gremio Cortana 2.0.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes un registro en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
             return;
         }
 
         // Confirmación de eliminación
         await sock.sendMessage(msg.key.remoteJid, { 
-            text: `⚠️ *¿Estás seguro de que quieres eliminar tu cuenta del gremio Azura Ultra?* Esto borrará todos tus datos, incluyendo personajes y mascotas.\n\n⏳ *Tienes 1 minuto para confirmar.*\n\n✅ Si estás seguro, usa \`${global.prefix}ok\` para confirmar.\n❌ Si no quieres eliminar, simplemente ignora este mensaje.` 
+            text: `⚠️ *¿Estás seguro de que quieres eliminar tu cuenta del gremio AdriBot🤴🏻?* Esto borrará todos tus datos, incluyendo personajes y mascotas.\n\n⏳ *Tienes 1 minuto para confirmar.*\n\n✅ Si estás seguro, usa \`${global.prefix}ok\` para confirmar.\n❌ Si no quieres eliminar, simplemente ignora este mensaje.` 
         }, { quoted: msg });
 
         // Guardar en memoria temporal la solicitud de eliminación
@@ -12564,7 +12564,7 @@ case 'ok': {
         // Verificar si el usuario está registrado
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: "❌ *No tienes un registro en el gremio Azura Ultra.*" 
+                text: "❌ *No tienes un registro en el gremio AdriBot🤴🏻.*" 
             }, { quoted: msg });
             return;
         }
@@ -12583,7 +12583,7 @@ case 'ok': {
 
         // Confirmar eliminación
         await sock.sendMessage(msg.key.remoteJid, { 
-            text: "🗑️ *Tu cuenta ha sido eliminada del gremio Cortana 2.0.*\n\n🔹 Puedes volver a registrarte en cualquier momento usando `"+global.prefix+"rpg <nombre> <edad>`." 
+            text: "🗑️ *Tu cuenta ha sido eliminada del gremio AdriBot🤴🏻.*\n\n🔹 Puedes volver a registrarte en cualquier momento usando `"+global.prefix+"rpg <nombre> <edad>`." 
         }, { quoted: msg });
 
         // ✅ Reacción de confirmación
@@ -12620,7 +12620,7 @@ case 'saldo': {
         // Verificar si el archivo existe
         if (!fs.existsSync(rpgFile)) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta en el gremio Cortana 2.0.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
             return;
         }
@@ -12632,7 +12632,7 @@ case 'saldo': {
         let userId = msg.key.participant || msg.key.remoteJid;
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, { 
-                text: `❌ *No tienes una cuenta en el gremio Cortana 2.0.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.` 
             }, { quoted: msg });
             return;
         }
@@ -12664,7 +12664,7 @@ case 'saldo': {
 
 // Enviar mensaje con imagen estática 🖼️
 await sock.sendMessage(msg.key.remoteJid, { 
-    image: { url: "https://cdn.russellxz.click/c97c119a.jpeg" },
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" },
     caption: mensaje,
     mentions: [userId] // Menciona al usuario
 }, { quoted: msg });
@@ -12728,7 +12728,7 @@ case 'dame': {
         let userId = msg.key.participant || msg.key.remoteJid;
         if (!rpgData.usuarios[userId]) {
             await sock.sendMessage(msg.key.remoteJid, {
-                text: `❌ *No tienes una cuenta en el gremio Azura Ultra.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
+                text: `❌ *No tienes una cuenta en el gremio AdriBot🤴🏻.*\n\n📜 Usa \`${global.prefix}rpg <nombre> <edad>\` para registrarte.`
             }, { quoted: msg });
             return;
         }
@@ -12788,7 +12788,7 @@ case 'tiendamascotas': {
         }
 
         // Explicación sobre la compra de mascotas 📜
-        let mensaje = `🏪 *Եíҽղժɑ ժҽ ʍɑՏϲօԵɑՏ - 𝐂𝐎𝐑𝐓𝐀𝐍𝐀 𝟐.𝟎* 🏪\n\n`;
+        let mensaje = `🏪 *Եíҽղժɑ ժҽ ʍɑՏϲօԵɑՏ - AdriBot🤴🏻* 🏪\n\n`;
         mensaje += `🐶 *Aquí puedes comprar mascotas para mejorar tu equipo.*\n`;
         mensaje += `🛍️ *Para comprar una mascota, usa:* \n`;
         mensaje += `   📌 \`${global.prefix}compra <nombre_mascota>\`\n`;
@@ -12818,11 +12818,11 @@ case 'tiendamascotas': {
         mensaje += `🔹 También puedes usar *${global.prefix}compra <número_mascota>* si prefieres usar el número de la lista.\n`;
         mensaje += `🔹 Usa *${global.prefix}vermascotas* para ver todas las mascotas que has comprado.\n`;
         mensaje += `🔹 Usa *${global.prefix}mascota <número>* para cambiar tu mascota principal.\n\n`;
-        mensaje += `🚀 **¡Colecciona y entrena las mejores mascotas en el Gremio Azura Ultra!** 🏆`;
+        mensaje += `🚀 **¡Colecciona y entrena las mejores mascotas en el Gremio AdriBot🤴🏻!** 🏆`;
 
         // Enviar mensaje con imagen estática 🖼️
 await sock.sendMessage(msg.key.remoteJid, { 
-    image: { url: "https://cdn.russellxz.click/15165d4f.jpeg" }, // Convertido a imagen
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" }, // Convertido a imagen
     caption: mensaje
 }, { quoted: msg });
 
@@ -12865,7 +12865,7 @@ case 'tiendaper': {
         }
 
         // Explicación de compra al inicio 📜
-        let mensaje = `🏪 *ᴛɪᴇɴᴅᴀ ᴅᴇ ᴘᴇʀsᴏɴᴀᴊᴇs - 𝚌𝚘𝚛𝚝𝚊𝚗𝚊 𝟸.𝟶* 🏪\n\n`;
+        let mensaje = `🏪 *ᴛɪᴇɴᴅᴀ ᴅᴇ ᴘᴇʀsᴏɴᴀᴊᴇs - AdriBot🤴🏻* 🏪\n\n`;
         mensaje += `🎭 *Compra personajes de anime y mejora sus habilidades.*\n`;
         mensaje += `🛒 *Para comprar un personaje usa:* \n`;
         mensaje += `   📌 \`${global.prefix}comprar <nombre_personaje>\`\n`;
@@ -12890,7 +12890,7 @@ case 'tiendaper': {
 
         // Enviar mensaje con imagen estática 🖼️
 await sock.sendMessage(msg.key.remoteJid, { 
-    image: { url: "https://cdn.russellxz.click/1e23db7d.jpeg" }, // Ahora como imagen
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" }, // Ahora como imagen
     caption: mensaje
 }, { quoted: msg });
 
@@ -13367,7 +13367,7 @@ case "s":
         // 🌟 Formato llamativo para la metadata del sticker 🌟
         let metadata = {
             packname: `✨ Lo Mandó Hacer: ${senderName} ✨`,
-            author: `🤖 Bot Creador: Cortana 2.0\n🛠️ Desarrollado por: 𝙍𝙪𝙨𝙨𝙚𝙡𝙡 xz💻\n${fechaCreacion}`
+            author: `🤖 Bot Creador: AdriBot🤴🏻\n🛠️ Desarrollado por: Adri-pitudo💻\n${fechaCreacion}`
         };
 
         let stickerBuffer;
@@ -13667,19 +13667,19 @@ case 'info':
       react: { text: "ℹ️", key: msg.key }
     });
 
-    const infoMessage = `╭─ *🤖 CORTANA 2.0 BOT* ─╮
+    const infoMessage = `╭─ *🤖 AdriBot🤴🏻* ─╮
 │ 🔹 *Prefijo actual:* ${global.prefix}
-│ 👑 *Dueño:* Russell xz
+│ 👑 *Dueño:* Adri-pitudo 
 │ 🛠️ *Bot desarrollado desde cero* con la ayuda de Chatgpt.
-│ 🚀 *Creado por:* Russell
+│ 🚀 *Creado por:* Adri-pitudo 
 │  
 ├─〔 📥 *Descargas Redes* 〕─
 │ 📌 *IG, TikTok y FB*  
-│    - 👤 *Colaboró:* DIEGO-OFC  
+│    - 👤 *Colaboró:* Orlando 157
 │  
 │ 📌 *Descargas youtube*
 │     (.play, .play2, .ytmp3, .ytmp4)  
-│    - 👤 *Colaboró:* Eliasar54  
+│    - 👤 *Colaboró:* Orlando 157 
 │  
 ├─〔 📜 *Menús y Comandos* 〕─
 │ 📌 Usa *${global.prefix}menu* para ver los comandos principales.  
@@ -13689,7 +13689,7 @@ case 'info':
 
     await sock.sendMessage2(msg.key.remoteJid,
   {
-    image: { url: "https://cdn.russellxz.click/8d278a49.jpeg" }, 
+    image: { url: "https://cdn.russellxz.click/c886aadd.jpeg" }, 
     caption: infoMessage 
   },
   msg 
@@ -14059,9 +14059,9 @@ case "perfil": {
 }
 
 case 'creador': {
-    const ownerNumber = "15167096032@s.whatsapp.net"; // Número del dueño en formato WhatsApp
-    const ownerName = "Russell xz 🤖"; // Nombre del dueño
-    const messageText = "📞 *Contacto del Creador:*\n\nSi tienes dudas, preguntas o sugerencias sobre el bot, puedes contactar a mi creador.\n\n📌 *Nombre:* Russell\n📌 *Número:* +1 (516) 709-6032\n💬 *Mensaje directo:* Pulsa sobre el contacto y chatea con él.";
+    const ownerNumber = "5215646069199@s.whatsapp.net"; // Número del dueño en formato WhatsApp
+    const ownerName = "Adri-pitudo 🤖"; // Nombre del dueño
+    const messageText = "📞 *Contacto del Creador:*\n\nSi tienes dudas, preguntas o sugerencias sobre el bot, puedes contactar a mi creador.\n\n📌 *Nombre:* Russell\n📌 *Número:* +52 564 6069 199\n💬 *Mensaje directo:* Pulsa sobre el contacto y chatea con él.";
 
     // Enviar mensaje con el contacto del dueño
     await sock.sendMessage(msg.key.remoteJid, {
@@ -14557,7 +14557,7 @@ case "ig":
 
 ━━━━━━━━━━━━━━  
 🚀 *API:* api.dorratz.com  
-🤖 *Cortana 2.0 Bot*`;
+🤖 *AdriBot🤴🏻t*`;
 
         // Asegurar carpeta tmp
         const tmpDir = path.resolve('./tmp');
@@ -14683,7 +14683,7 @@ case "tt":
 
 📥 *Video descargado con éxito*
 🌐 *API:* https://api.dorratz.com
-🤖 *Cortana 2.0 Bot*`;
+🤖 *AdriBot🤴🏻t*`;
 
         // 📩 Enviar video
         await sock.sendMessage(msg.key.remoteJid, {
@@ -14768,7 +14768,7 @@ case "fb":
         }
 
         // 📜 Mensaje final sin resoluciones ni 720
-        const message = `🎥 𝗩𝗶𝗱𝗲𝗼 𝗱𝗲 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗹𝗶𝘀𝘁𝗼 🎯\n\n> ⚙️ DESCARGADO con api.dorratz.com\n───────\n🤖 *Cortana 2.0 Bot*`;
+        const message = `🎥 𝗩𝗶𝗱𝗲𝗼 𝗱𝗲 𝗙𝗮𝗰𝗲𝗯𝗼𝗼𝗸 𝗹𝗶𝘀𝘁𝗼 🎯\n\n> ⚙️ DESCARGADO con api.dorratz.com\n───────\n🤖 *AdriBot🤴🏻*`;
 
         await sock.sendMessage(msg.key.remoteJid, {
             video: fs.readFileSync(filePath),
