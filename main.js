@@ -14835,3 +14835,47 @@ console.log(chalk.redBright(`Update ${__filename}`))
 delete require.cache[file]
 require(file)
 })
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require("@whiskeysockets/baileys");
+
+async function startBot() {
+    const { state, saveCreds } = await useMultiFileAuthState('./session');
+    const sock = makeWASocket({
+        auth: state,
+        printQRInTerminal: true
+    });
+
+    sock.ev.on('creds.update', saveCreds);
+
+    sock.ev.on("connection.update", ({ connection, lastDisconnect }) => {
+        if (connection === "close") {
+            if (lastDisconnect.error?.output?.statusCode !== DisconnectReason.loggedOut) {
+                startBot();
+            }
+        } else if (connection === "open") {
+            console.log("✅ AdriBot conectado correctamente.");
+        }
+    });
+
+    // 📌 AQUÍ LEE TODOS LOS MENSAJES QUE ENVÍAN
+    sock.ev.on('messages.upsert', async ({ messages }) => {
+        const msg = messages[0];
+        if (!msg.message || msg.key.fromMe) return;
+
+        const text = msg.message.conversation ||
+                     msg.message.extendedTextMessage?.text ||
+                     "";
+
+        // 📌 Prefijo del bot
+        const prefix = global.prefix || ".";
+
+        if (!text.startsWith(prefix)) return;
+
+        const args = text.slice(prefix.length).trim().split(/ +/);
+        const command = args.shift().toLowerCase();
+
+        // 📌 Aquí se ejecutan tus comandos del SWITCH
+        await handleCommand(sock, msg, command, args, msg.key.participant || msg.key.remoteJid);
+    });
+}
+
+startBot();
