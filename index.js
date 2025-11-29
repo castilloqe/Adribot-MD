@@ -128,50 +128,67 @@ function guardarModos(data) {
 
 let modos = cargarModos();
     
-    // Configuración de consola
-    console.log(chalk.cyan(figlet.textSync("Cortana 2.0 Bot", { font: "Standard" })));    
-    console.log(chalk.green("\n✅ Iniciando conexión...\n"));
-    
-    // ✅ Mostrar opciones de conexión bien presentadas
-    console.log(chalk.yellow("📡 ¿Cómo deseas conectarte?\n"));
-    console.log(chalk.green("  [1] ") + chalk.white("📷 Escanear código QR"));
-    console.log(chalk.green("  [2] ") + chalk.white("🔑 Ingresar código de 8 dígitos\n"));
+    // ================================
+//  Nueva conexión Baileys 6.7.8
+// ================================
 
-    // Manejo de entrada de usuario
-    const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
-    const question = (text) => new Promise((resolve) => rl.question(text, resolve));
+console.log(chalk.cyan(figlet.textSync("Cortana 2.0 Bot", { font: "Standard" })));
+console.log(chalk.green("\n✅ Iniciando conexión...\n"));
 
-    let method = "1"; // Por defecto: Código QR
-    if (!fs.existsSync("./sessions/creds.json")) {
-        method = await question(chalk.magenta("📞 Ingresa tu número (Ej: 5491168XXXX) "));
+const {
+    default: makeWASocket,
+    useMultiFileAuthState,
+    fetchLatestBaileysVersion,
+    DisconnectReason
+} = require("@whiskeysockets/baileys");
+const pino = require("pino");
+const fs = require("fs");
 
-        if (!["1", "2"].includes(method)) {
-            console.log(chalk.red("\n❌ Opción inválida. Reinicia el bot y elige 1 o 2."));
-            process.exit(1);
-        }
-    }
+// ==== BORRAR SESIÓN VIEJA SI ESTÁ DAÑADA ====
+async function clearAuth() {
+    if (fs.existsSync("./sessions")) fs.rmSync("./sessions", { recursive: true });
+}
 
-    async function startBot() {
-        try {
-            let { version } = await fetchLatestBaileysVersion();
-            const socketSettings = {
-                printQRInTerminal: method === "1",
-                logger: pino({ level: "silent" }),
-                auth: { creds: state.creds, keys: makeCacheableSignalKeyStore(state.keys, pino({ level: "silent" })) },
-                browser: method === "1" ? ["AzuraBot", "Safari", "1.0.0"] : ["Ubuntu", "Chrome", "20.0.04"],
-            };
+// ==== CONEXIÓN ====
+async function iniciarConexion() {
 
-            const sock = makeWASocket(socketSettings);
-setupConnection(sock)
-            // Si la sesión no existe y se usa el código de 8 dígitos
-            if (!fs.existsSync("./sessions/creds.json") && method === "2") {
-                let phoneNumber = await question("😎Fino vamos aya😎: ");
-                phoneNumber = phoneNumber.replace(/\D/g, "");
-                setTimeout(async () => {
-                    let code = await sock.requestPairingCode(phoneNumber);
-                    console.log(chalk.magenta("🔑 Código de vinculación: ") + chalk.yellow(code.match(/.{1,4}/g).join("-")));
-                }, 2000);
+    const { state, saveCreds } = await useMultiFileAuthState("./sessions");
+    const { version } = await fetchLatestBaileysVersion();
+
+    const conn = makeWASocket({
+        logger: pino({ level: "silent" }),
+        printQRInTerminal: true,
+        auth: state,
+        version
+    });
+
+    conn.ev.on("creds.update", saveCreds);
+
+    conn.ev.on("connection.update", async (update) => {
+        const { connection, lastDisconnect } = update;
+
+        if (connection === "close") {
+            const reason = lastDisconnect?.error?.output?.statusCode;
+
+            if (reason === DisconnectReason.loggedOut) {
+                console.log(chalk.red("❌ Sesión expirada. Borrando sesión..."));
+                await clearAuth();
+                iniciarConexion();
+            } else {
+                console.log(chalk.yellow("⚠️ Reconectando..."));
+                iniciarConexion();
             }
+        }
+
+        if (connection === "open") {
+            console.log(chalk.green("🔥 Cortana conectada correctamente a WhatsApp!"));
+        }
+    });
+
+    global.conn = conn;
+}
+
+iniciarConexion();
 
 //_________________
 
